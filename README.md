@@ -2,7 +2,7 @@
  This repository hosts the scripts to integrate the 'xenon-poisoning' characteristics of small modular reactor based nuclear power plant in the FESTIV multi-timescale power system simulation framework.
 
 ## How to use
-Users can reconfigure any given N-R HES with minor modifications in the provided scripts and get insightful results by following the instructions below:
+Users can reconfigure any IES with minor modifications in the provided scripts and get insightful results by following the instructions below:
 * "FESTIV_Secondary_Trial.m" is the main script to run. It can be run via MATLAB GUI or command line on a machine which has FESTIV already installed along with the sotware mentioned below.
 * To have the new optimization models containing 'xenon-poisoning constraints', replace the original .gms file in FESTIV repository.
 * Since, the set-up of FESTIV automatically retains the model formulated in the 'FESTIV_MODEL-master\MODEL_RULES\GAMS_Model_Files', please make sure to comment out some initial scripts in the FESTIV.m file and load the multi-timescale simulation parameter through loading a MATLAB workspace variable. You can follow the process used in the provided 'FESTIV_Secondary_Trial.m' file.
